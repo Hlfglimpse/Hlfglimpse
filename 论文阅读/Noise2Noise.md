@@ -16,4 +16,5 @@
 > 简单来说,仍然是**实验室产品**
 
 #### 尝试使用Noise2Noise实现去水印
-[Noise2Noise代码地址](https://github.com/NVlabs/noise2noise)
+[Noise2Noise代码实现TensorFlow-官方](https://github.com/NVlabs/noise2noise)
+[Noise2Noise代码实现Pycharm-非官方](https://github.com/joeylitalien/noise2noise-pytorch)
