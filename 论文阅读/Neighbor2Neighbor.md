@@ -7,7 +7,7 @@
 1. 随机邻域子采样-->生成成对的训练图像
 2. 使用1生成的样本对训练网络，使用正则化作为额外的损失
 
-#### 先导：[Noise2Noise](http://proceedings.mlr.press/v80/lehtinen18a)
+#### 先导：[Noise2Noise](http://proceedings.mlr.press/v80/lehtinen18a)|已读
 Noise2Noise通过对同一个场景拍摄多张独立的含噪图像即可训练降噪网络。
 
 ## 介绍
