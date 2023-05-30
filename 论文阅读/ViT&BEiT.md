@@ -1,6 +1,7 @@
 # Transformer & ViT & BERT & BEiT 原理解析
 ---
 ## Transformer ： Attention is all you need
+### 中文解析：[Transformer](https://zhuanlan.zhihu.com/p/338817680)
 ![Transformer](https://raw.githubusercontent.com/Hlfglimpse/PicGo/master/20230529162515.png)
 ### Encoder输入：Embedding（单词+位置）
 ![Embedding](https://raw.githubusercontent.com/Hlfglimpse/PicGo/master/20230530115218.png)
