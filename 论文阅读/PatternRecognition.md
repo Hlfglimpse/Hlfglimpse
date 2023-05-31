@@ -111,3 +111,19 @@
     >
     >比较第四个观测白球在三个盒子中的概率：$$ \max[0.00189,0.003024,0.001575]=0.003024 $$
     > 因此，根据Viterbi算法，最优路径为：**3->2->2->2**
+
+## 作业4
+![题目1](https://raw.githubusercontent.com/Hlfglimpse/PicGo/master/20230531143240.png)
+> 1. 点 $ X_a $ 与决策面距离大小：$$ d = \frac{W^T X_a + w_{n+1}}{\sqrt{\sum_{i=1}^n{w_i^2}}} $$
+> 
+> 2. 证明 $ X_p $ 是使 $ ||X-X_a|| $ 取值最小的 $ X $：
+> > 取决策面上任意一点 $ X_r $，线段 $ X_rX_a $ 与决策面的夹角记为 $ \alpha, (\alpha \in [0, \frac{\pi}{2}]) $ ，那么线段 $ X_rX_a $ 在决策面上的投影线段大小为：$$ d_p = ||X_r-X_a||\cos\alpha $$
+> > 使 $ ||X_r-X_a|| $ ,也就是使 $ d_p $最小,显然在 $ X_r $ 取 $ X_p $ 时满足条件。
+
+![题目2](https://raw.githubusercontent.com/Hlfglimpse/PicGo/master/20230531154216.png)
+> 类均值向量：$$ m_1= \begin{pmatrix} \frac{1}{2} \\ 1 \end{pmatrix},m_2= \begin{pmatrix} 2 \\ -\frac{1}{2} \end{pmatrix} $$
+> 类内离散度矩阵：$$ S_1= \begin{pmatrix} \frac{1}{2} & 1 \\ 1 & 2 \end{pmatrix},S_2= \begin{pmatrix} 2 & 1 \\ 1 & \frac{1}{2} \end{pmatrix} $$
+> 总类内离散度矩阵：$$ S_w=S_1+S_2=S_2= \begin{pmatrix} \frac{5}{2} & 2 \\ 2 & \frac{5}{2} \end{pmatrix} $$
+> 显然， $ S_w $ 非奇异，那么最佳投影方向 $ w $ 为：$$ \begin{aligned} w&=S_w^{-1}(m_1-m_2) \\ &=\begin{pmatrix} \frac{10}{9} & -\frac{8}{9} \\ -\frac{8}{9} & \frac{10}{9} \end{pmatrix} \begin{pmatrix} -\frac{3}{2} \\ \frac{3}{2} \end{pmatrix} \\&=\begin{pmatrix} -\frac{8}{3} \\ \frac{8}{3} \end{pmatrix} \end{aligned} $$
+>
+> **类内总散度矩阵**表示从总体来看类内各个样本与类之间的离散度
